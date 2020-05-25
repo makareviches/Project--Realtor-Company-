@@ -6,9 +6,9 @@
 CRUD project 'Real estate agency' is based on a database which  collects information about realtors, apartmnents and sales trasactions.
 A report includes files which allow:
 
--create a database and tables,
--fill tables with data,
--find specific information in the database,
--change records inside tables,
--delete data as well as  the table and the database.
+- create a database and tables,
+- fill tables with data,
+- find specific information in the database,
+- change records inside tables,
+- delete data as well as  the table and the database.
 
