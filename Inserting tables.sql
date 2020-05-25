@@ -78,3 +78,4 @@ INSERT INTO Sales_transactions(sale_date, realtor_id, apartment_id)
 	('2020-02-19', 9, 24),
 	('2020-02-19', 2, 25),
 	('2020-02-20', 3, 26);
+
