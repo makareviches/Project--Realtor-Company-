@@ -3,14 +3,14 @@
 
 <img src="Images/Project's diagram.png"  width="200"> <img src="Images/Filled tables.png"  width="200">
 
-CRUD project 'Real estate agency' is based on a database which  collects information about realtors, apartmnents and sales trasactions.
-A report includes files which allow:
+CRUD project 'Real estate agency' is based on a database which collects information about realtors, apartmnents and sales trasactions.
+It includes files that allow:
 
-* create a database and tables,
-* fill tables with data,
-* find specific information in the database,
-* change records inside tables,
-* delete data as well as  the table and the database.
+* to create a database and tables,
+* to fill tables with data,
+* to find specific information in the database,
+* to change records inside tables,
+* to delete data as well as  the table and the database.
 
 This project was built using [SQL Server 2019](https://www.microsoft.com/en-us/sql-server/sql-server-2019).
 
