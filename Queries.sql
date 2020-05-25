@@ -10,7 +10,7 @@ USE Project;
 --
 
 SELECT apartment_id  AS Three_bd_apartments_id,
-	   street_adres,
+	   street_address,
 	   apartment,
 	   number_of_bd,
 	   square_footage,
@@ -37,7 +37,7 @@ FROM Apartments;
 
 SELECT *
 FROM Apartments
-WHERE street_adres='1536 South Ave' AND number_of_bd=2;
+WHERE street_address='1536 South Ave' AND number_of_bd=2;
 
 
 --
@@ -84,7 +84,7 @@ WHERE number_of_bd=2;
 --
 SELECT MAX(Home_value) as the_most_expensive_ap, MIN(Home_value) as the_cheapest_ap
 FROM Apartments
-WHERE street_adres LIKE '%10th ST';
+WHERE street_address LIKE '%10th ST';
 
 
 --
@@ -92,7 +92,7 @@ WHERE street_adres LIKE '%10th ST';
 --
 SELECT * 
 FROM Apartments
-WHERE street_adres IN ('100 Pierce St', '6151 Orange St', '988 Fulton St');
+WHERE street_address IN ('100 Pierce St', '6151 Orange St', '988 Fulton St');
 
 
 --
@@ -149,7 +149,7 @@ ORDER BY square_footage;
 --
 SELECT r.full_name, COUNT(s.sales_transaction_id) AS number_of_transactions
 FROM Sales_transactions AS s
-RIGHT JOIN Realtors AS r
+INNER JOIN Realtors AS r
 ON s.realtor_id=r.realtor_id
 GROUP BY r.full_name
 HAVING COUNT(s.sales_transaction_id)=2 OR COUNT(s.sales_transaction_id)>2
@@ -176,7 +176,6 @@ GROUP BY r.full_name;
 --------------------------------------------------------------------------------------------
 -- UPDATE
 --------------------------------------------------------------------------------------------
-
 
 --
 --Update the row.
@@ -215,7 +214,7 @@ ALTER COLUMN Phone_number varchar(50);
 --
 DELETE
 FROM Apartments_backup
-WHERE street_adres LIKE '%State%'; 
+WHERE street_address LIKE '%State%'; 
 
 
 --

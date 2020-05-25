@@ -1,3 +1,6 @@
+--------------------------------------------------------------------------------------------
+-- INSERTING
+--------------------------------------------------------------------------------------------
 INSERT INTO realtors (full_name, comission)
 	VALUES
 	('Que Foor', 0.02),
@@ -14,7 +17,7 @@ INSERT INTO realtors (full_name, comission)
 	('Holly Noto', 0.07);
 
 
-INSERT INTO Apartments(street_adres, apartment, number_of_bd, square_footage, home_value)
+INSERT INTO Apartments(street_address, apartment, number_of_bd, square_footage, home_value)
 	VALUES
 	('100 Pierce St', 2, 3, 1250, 498000),
 	('20 Parkridge Dr', 7, 1, 715, 699000),
