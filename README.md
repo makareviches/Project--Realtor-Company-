@@ -3,7 +3,7 @@
 
 <img src="Images/Project's diagram.png"  width="200"> <img src="Images/Filled tables.png"  width="200">
 
-CRUD project 'Real estate agency' is based on a database which collects information about realtors, apartmnents and sales trasactions.
+CRUD project 'Real estate agency' is based on a database which collects information about realtors, apartments and sales transactions.
 It includes files that allow:
 
 * to create a database and tables,
