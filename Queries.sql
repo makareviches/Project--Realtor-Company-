@@ -53,7 +53,7 @@ WHERE full_name LIKE 'J%' AND comission>0.10;
 -- Calculate how many days are included in the report
 --
 
-SELECT COUNT(sale_date)
+SELECT COUNT(sale_date) AS sale_dates
 FROM (SELECT DISTINCT sale_date FROM Sales_transactions) AS dist;	
 
 
@@ -117,13 +117,13 @@ WHERE number_of_bd=1 AND home_value>500000 and home_value<700000;
 --
 -- Calculate realtor's profit for each sales transaction.
 --
-SELECT Realtors.full_name, Sales_transactions.sale_date, Apartments.home_value, Realtors.comission, Apartments.home_value*Realtors.comission as profit
-FROM Apartments
-JOIN Sales_transactions
-ON Apartments.apartment_id=Sales_transactions.apartment_id
-JOIN Realtors
-ON Sales_transactions.realtor_id=Realtors.realtor_id
-ORDER BY Realtors.full_name;
+SELECT r.full_name, s.sale_date, a.home_value, r.comission, a.home_value*r.comission as profit
+FROM Apartments AS a
+JOIN Sales_transactions AS s
+ON a.apartment_id=s.apartment_id
+JOIN Realtors AS r
+ON s.realtor_id=r.realtor_id
+ORDER BY r.full_name;
 
 
 --
@@ -185,13 +185,6 @@ WHERE home_value=34800;
 
 --
 --Add column 'Phone column' to the table 'Realtors'.
---
-ALTER TABLE Realtors
-ADD Phone_number varchar(255);
-
-
---
---Add column 'Phone number' to the table 'Realtors'.
 --
 ALTER TABLE Realtors
 ADD Phone_number varchar(255);

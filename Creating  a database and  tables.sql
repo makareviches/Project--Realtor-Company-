@@ -14,7 +14,7 @@ CREATE TABLE Realtors (
 
 CREATE TABLE Apartments (
   apartment_id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-  street_addres VARCHAR(255) NOT NULL,
+  street_address VARCHAR(255) NOT NULL,
   apartment INT NOT NULL,
   number_of_bd INT NOT NULL,
   square_footage FLOAT NOT NULL,

@@ -1,7 +1,10 @@
 --------------------------------------------------------------------------------------------
 -- INSERTING
 --------------------------------------------------------------------------------------------
-INSERT INTO realtors (full_name, comission)
+USE Project;
+
+
+INSERT INTO  Realtors (full_name, comission)
 	VALUES
 	('Que Foor', 0.02),
 	('Julie Flouty', 0.12),
@@ -47,7 +50,7 @@ INSERT INTO Apartments(street_address, apartment, number_of_bd, square_footage, 
 	('941 10th St', 48, 3, 1540, 620000);
 	
 
-	INSERT INTO Sales_transactions(sale_date, realtor_id, apartment_id)
+INSERT INTO Sales_transactions(sale_date, realtor_id, apartment_id)
 	VALUES
 	('2020-02-01', 1, 1),
 	('2020-02-02', 2, 2),
