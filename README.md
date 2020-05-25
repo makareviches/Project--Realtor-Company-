@@ -12,4 +12,4 @@ A report includes files which allow:
 * change records inside tables,
 * delete data as well as  the table and the database.
 
-This project was built using [GitHub Pages](https://www.microsoft.com/en-us/sql-server/sql-server-2019).
+This project was built using [SQL Server 2019](https://www.microsoft.com/en-us/sql-server/sql-server-2019).
